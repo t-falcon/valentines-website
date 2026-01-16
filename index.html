@@ -44,7 +44,13 @@
         <source src="/songs/still.in.love.mp3">
     </audio>
 
-    <button> click me at the end </button>
+    <button id="playBtn">click me at the end</button>
+
+<script>
+document.getElementById("playBtn").addEventListener("click", () => {
+    document.getElementById("bg-music").play();
+});
+</script>
 
     
 
@@ -56,4 +62,5 @@
 
 </body>
 </html>
+
 
