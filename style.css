@@ -58,7 +58,7 @@ p.show
 
 audio
 {
-    display: none;
+   
 }
 
 .pictures
@@ -207,5 +207,6 @@ img.show
 {
     opacity: 1;
 }
+
 
 
