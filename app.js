@@ -47,3 +47,17 @@ document.getElementById('intro').addEventListener('click', () => {
     console.error('Playback failed:', err);
   });
 });
+
+document.getElementById('intro').addEventListener('click', () => {
+  const overlay = document.getElementById('intro');
+  const video = document.getElementById('vinyl');
+
+  video.volume = 1; // or adjust volume as needed
+  video.play().then(() => {
+    overlay.style.transition = 'opacity 0.5s ease';
+    overlay.style.opacity = 0;
+    setTimeout(() => overlay.remove(), 500);
+  }).catch(err => {
+    console.error('Video playback failed:', err);
+  });
+});
