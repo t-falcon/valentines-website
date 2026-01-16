@@ -40,19 +40,11 @@
         </a>
     </div>
 
-    <audio controls loop>
-        <source src="songs/still.in.love.mp3">
+    <audio id="music" loop>
+        <source src="songs/still.in.love.mp3" type="audio/mpeg">
     </audio>
 
-    <button id="playBtn">click me at the end</button>
-
-<script>
-document.addEventListener("click", () => {
-  const music = document.getElementById("music");
-  music.play();
-}, { once: true });
-</script>
-
+<button id="startMusic">click me at the end</button>
     
 
 
@@ -63,6 +55,7 @@ document.addEventListener("click", () => {
 
 </body>
 </html>
+
 
 
 
