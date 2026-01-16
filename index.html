@@ -40,16 +40,17 @@
         </a>
     </div>
 
-    <audio controls autoplay loop>
+    <audio controls loop>
         <source src="/songs/still.in.love.mp3">
     </audio>
 
     <button id="playBtn">click me at the end</button>
 
 <script>
-document.getElementById("playBtn").addEventListener("click", () => {
-    document.getElementById("bg-music").play();
-});
+document.addEventListener("click", () => {
+  const music = document.getElementById("music");
+  music.play();
+}, { once: true });
 </script>
 
     
@@ -62,6 +63,7 @@ document.getElementById("playBtn").addEventListener("click", () => {
 
 </body>
 </html>
+
 
 
 
